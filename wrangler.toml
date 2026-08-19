@@ -1,0 +1,9 @@
+name = "trading-os"
+compatibility_date = "2026-01-01"
+
+[assets]
+directory = "./dist"
+# Any unknown path (e.g. /dashboard, /settings) falls back to index.html so
+# the app's own client-side router can handle it — without this, every
+# in-app link that isn't the homepage returns a 404 straight from Cloudflare.
+not_found_handling = "single-page-application"
